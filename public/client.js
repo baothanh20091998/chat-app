@@ -1,4 +1,5 @@
 // gửi một yêu cầu kết nối tới server
+const io = require("socket.io");
 const socket = io();
 
 const acknowlegment = (err) => {
