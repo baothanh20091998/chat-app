@@ -5,11 +5,7 @@ const path = require("path");
 const app = express();
 const dateFormat = require("date-format");
 const Filter = require("bad-words");
-const {
-  addUser,
-  getListUserByRoom,
-  removeUser,
-} = require("../public/models/users");
+const { addUser, getListUserByRoom, removeUser } = require("../public/users");
 
 // static file
 const publicPathDirectory = path.join(__dirname, "../public");
